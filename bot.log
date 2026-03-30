@@ -1,0 +1,368 @@
+INFO:aiogram.dispatcher:Start polling
+INFO:aiogram.dispatcher:Run polling for bot @UC_Marketn1_bot id=8695673108 - 'UC MARKET 24/7'
+INFO:aiogram.event:Update id=25787060 is handled. Duration 698 ms by bot id=8695673108
+INFO:aiogram.event:Update id=25787061 is handled. Duration 322 ms by bot id=8695673108
+INFO:aiogram.event:Update id=25787062 is handled. Duration 265 ms by bot id=8695673108
+INFO:aiogram.event:Update id=25787063 is handled. Duration 214 ms by bot id=8695673108
+INFO:aiogram.event:Update id=25787064 is handled. Duration 225 ms by bot id=8695673108
+INFO:aiogram.event:Update id=25787065 is handled. Duration 190 ms by bot id=8695673108
+INFO:aiogram.event:Update id=25787066 is handled. Duration 337 ms by bot id=8695673108
+INFO:aiogram.event:Update id=25787067 is handled. Duration 422 ms by bot id=8695673108
+INFO:aiogram.event:Update id=25787068 is handled. Duration 220 ms by bot id=8695673108
+INFO:aiogram.event:Update id=25787069 is handled. Duration 374 ms by bot id=8695673108
+INFO:aiogram.event:Update id=25787070 is handled. Duration 188 ms by bot id=8695673108
+INFO:aiogram.event:Update id=25787071 is handled. Duration 360 ms by bot id=8695673108
+INFO:aiogram.event:Update id=25787072 is handled. Duration 424 ms by bot id=8695673108
+INFO:aiogram.event:Update id=25787073 is handled. Duration 289 ms by bot id=8695673108
+INFO:aiogram.event:Update id=25787074 is handled. Duration 385 ms by bot id=8695673108
+ERROR:aiogram.dispatcher:Failed to fetch updates - TelegramNetworkError: HTTP Client says - Request timeout error
+WARNING:aiogram.dispatcher:Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8695673108)
+INFO:aiogram.dispatcher:Connection established (tryings = 1, bot id = 8695673108)
+INFO:aiogram.event:Update id=25787081 is not handled. Duration 72 ms by bot id=8695673108
+ERROR:aiogram.event:Cause exception while process update id=25787081 by bot id=8695673108
+AttributeError: 'NoneType' object has no attribute 'isdigit'
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/dist-packages/aiogram/dispatcher/dispatcher.py", line 320, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/dist-packages/aiogram/dispatcher/dispatcher.py", line 164, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/dist-packages/aiogram/dispatcher/middlewares/error.py", line 27, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/dist-packages/aiogram/dispatcher/middlewares/user_context.py", line 58, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/contextlib.py", line 222, in __aexit__
+    await self.gen.athrow(typ, value, traceback)
+  File "/usr/local/lib/python3.11/dist-packages/aiogram/fsm/storage/memory.py", line 77, in lock
+    yield
+  File "/usr/local/lib/python3.11/dist-packages/aiogram/fsm/middleware.py", line 43, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/dist-packages/aiogram/dispatcher/event/telegram.py", line 126, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/dist-packages/aiogram/dispatcher/event/handler.py", line 71, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/dist-packages/aiogram/dispatcher/dispatcher.py", line 283, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/dist-packages/aiogram/dispatcher/router.py", line 161, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/dist-packages/aiogram/dispatcher/router.py", line 153, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/dist-packages/aiogram/dispatcher/router.py", line 181, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/dist-packages/aiogram/dispatcher/event/telegram.py", line 126, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/dist-packages/aiogram/dispatcher/event/handler.py", line 71, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/home/ubuntu/pubg_bot/main.py", line 99, in process_id
+    if not player_id.isdigit():
+           ^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'isdigit'
+INFO:aiogram.event:Update id=25787083 is handled. Duration 401 ms by bot id=8695673108
+INFO:aiogram.event:Update id=25787078 is handled. Duration 431 ms by bot id=8695673108
+INFO:aiogram.event:Update id=25787076 is handled. Duration 539 ms by bot id=8695673108
+INFO:aiogram.event:Update id=25787077 is handled. Duration 560 ms by bot id=8695673108
+INFO:aiogram.event:Update id=25787082 is handled. Duration 583 ms by bot id=8695673108
+INFO:aiogram.event:Update id=25787079 is handled. Duration 615 ms by bot id=8695673108
+INFO:aiogram.event:Update id=25787075 is handled. Duration 641 ms by bot id=8695673108
+INFO:aiogram.event:Update id=25787080 is handled. Duration 666 ms by bot id=8695673108
+INFO:aiogram.event:Update id=25787084 is handled. Duration 233 ms by bot id=8695673108
+INFO:aiogram.event:Update id=25787085 is handled. Duration 171 ms by bot id=8695673108
+INFO:aiogram.event:Update id=25787086 is handled. Duration 263 ms by bot id=8695673108
+INFO:aiogram.event:Update id=25787087 is handled. Duration 139 ms by bot id=8695673108
+INFO:aiogram.event:Update id=25787088 is not handled. Duration 3 ms by bot id=8695673108
+INFO:aiogram.event:Update id=25787089 is handled. Duration 282 ms by bot id=8695673108
+INFO:aiogram.event:Update id=25787090 is handled. Duration 140 ms by bot id=8695673108
+ERROR:aiogram.dispatcher:Failed to fetch updates - TelegramNetworkError: HTTP Client says - Request timeout error
+WARNING:aiogram.dispatcher:Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8695673108)
+INFO:aiogram.dispatcher:Connection established (tryings = 1, bot id = 8695673108)
+INFO:aiogram.event:Update id=25787104 is handled. Duration 565 ms by bot id=8695673108
+INFO:aiogram.event:Update id=25787091 is handled. Duration 593 ms by bot id=8695673108
+INFO:aiogram.event:Update id=25787097 is handled. Duration 619 ms by bot id=8695673108
+INFO:aiogram.event:Update id=25787101 is handled. Duration 636 ms by bot id=8695673108
+INFO:aiogram.event:Update id=25787093 is handled. Duration 678 ms by bot id=8695673108
+INFO:aiogram.event:Update id=25787102 is handled. Duration 692 ms by bot id=8695673108
+INFO:aiogram.event:Update id=25787103 is handled. Duration 717 ms by bot id=8695673108
+INFO:aiogram.event:Update id=25787096 is handled. Duration 753 ms by bot id=8695673108
+INFO:aiogram.event:Update id=25787092 is handled. Duration 774 ms by bot id=8695673108
+INFO:aiogram.event:Update id=25787094 is handled. Duration 800 ms by bot id=8695673108
+INFO:aiogram.event:Update id=25787099 is handled. Duration 813 ms by bot id=8695673108
+INFO:aiogram.event:Update id=25787098 is handled. Duration 846 ms by bot id=8695673108
+INFO:aiogram.event:Update id=25787095 is handled. Duration 870 ms by bot id=8695673108
+INFO:aiogram.event:Update id=25787100 is handled. Duration 895 ms by bot id=8695673108
+INFO:aiogram.event:Update id=25787105 is handled. Duration 265 ms by bot id=8695673108
+INFO:aiogram.event:Update id=25787106 is handled. Duration 210 ms by bot id=8695673108
+INFO:aiogram.event:Update id=25787107 is handled. Duration 139 ms by bot id=8695673108
+INFO:aiogram.event:Update id=25787108 is handled. Duration 420 ms by bot id=8695673108
+INFO:aiogram.event:Update id=25787109 is handled. Duration 281 ms by bot id=8695673108
+INFO:aiogram.event:Update id=25787110 is handled. Duration 426 ms by bot id=8695673108
+INFO:aiogram.event:Update id=25787111 is handled. Duration 521 ms by bot id=8695673108
+INFO:aiogram.event:Update id=25787112 is handled. Duration 140 ms by bot id=8695673108
+INFO:aiogram.event:Update id=25787113 is handled. Duration 395 ms by bot id=8695673108
+INFO:aiogram.event:Update id=25787114 is handled. Duration 261 ms by bot id=8695673108
+INFO:aiogram.event:Update id=25787115 is handled. Duration 309 ms by bot id=8695673108
+INFO:aiogram.event:Update id=25787116 is handled. Duration 255 ms by bot id=8695673108
+INFO:aiogram.event:Update id=25787117 is handled. Duration 408 ms by bot id=8695673108
+INFO:aiogram.event:Update id=25787118 is handled. Duration 138 ms by bot id=8695673108
+INFO:aiogram.event:Update id=25787119 is handled. Duration 412 ms by bot id=8695673108
+INFO:aiogram.event:Update id=25787120 is handled. Duration 256 ms by bot id=8695673108
+INFO:aiogram.event:Update id=25787121 is handled. Duration 141 ms by bot id=8695673108
+INFO:aiogram.event:Update id=25787122 is handled. Duration 409 ms by bot id=8695673108
+ERROR:aiogram.dispatcher:Failed to fetch updates - TelegramNetworkError: HTTP Client says - Request timeout error
+WARNING:aiogram.dispatcher:Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8695673108)
+INFO:aiogram.dispatcher:Connection established (tryings = 1, bot id = 8695673108)
+INFO:aiogram.event:Update id=25787126 is handled. Duration 792 ms by bot id=8695673108
+INFO:aiogram.event:Update id=25787124 is handled. Duration 816 ms by bot id=8695673108
+INFO:aiogram.event:Update id=25787123 is handled. Duration 841 ms by bot id=8695673108
+INFO:aiogram.event:Update id=25787127 is handled. Duration 863 ms by bot id=8695673108
+INFO:aiogram.event:Update id=25787125 is handled. Duration 895 ms by bot id=8695673108
+INFO:aiogram.event:Update id=25787128 is handled. Duration 244 ms by bot id=8695673108
+INFO:aiogram.event:Update id=25787129 is handled. Duration 404 ms by bot id=8695673108
+INFO:aiogram.event:Update id=25787130 is handled. Duration 268 ms by bot id=8695673108
+INFO:aiogram.event:Update id=25787131 is handled. Duration 299 ms by bot id=8695673108
+INFO:aiogram.event:Update id=25787132 is handled. Duration 396 ms by bot id=8695673108
+INFO:aiogram.event:Update id=25787133 is handled. Duration 206 ms by bot id=8695673108
+INFO:aiogram.event:Update id=25787134 is handled. Duration 395 ms by bot id=8695673108
+INFO:aiogram.event:Update id=25787135 is handled. Duration 221 ms by bot id=8695673108
+INFO:aiogram.event:Update id=25787136 is handled. Duration 416 ms by bot id=8695673108
+ERROR:aiogram.dispatcher:Failed to fetch updates - TelegramNetworkError: HTTP Client says - Request timeout error
+WARNING:aiogram.dispatcher:Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8695673108)
+INFO:aiogram.dispatcher:Connection established (tryings = 1, bot id = 8695673108)
+INFO:aiogram.event:Update id=25787140 is handled. Duration 662 ms by bot id=8695673108
+INFO:aiogram.event:Update id=25787141 is handled. Duration 692 ms by bot id=8695673108
+INFO:aiogram.event:Update id=25787139 is handled. Duration 711 ms by bot id=8695673108
+ERROR:aiogram.dispatcher:Failed to fetch updates - TelegramNetworkError: HTTP Client says - Request timeout error
+WARNING:aiogram.dispatcher:Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8695673108)
+INFO:aiogram.dispatcher:Connection established (tryings = 1, bot id = 8695673108)
+INFO:aiogram.event:Update id=25787143 is handled. Duration 537 ms by bot id=8695673108
+INFO:aiogram.event:Update id=25787145 is handled. Duration 555 ms by bot id=8695673108
+INFO:aiogram.event:Update id=25787144 is not handled. Duration 649 ms by bot id=8695673108
+ERROR:aiogram.event:Cause exception while process update id=25787144 by bot id=8695673108
+TelegramBadRequest: Telegram server says - Bad Request: query is too old and response timeout expired or query ID is invalid
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/dist-packages/aiogram/dispatcher/dispatcher.py", line 320, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/dist-packages/aiogram/dispatcher/dispatcher.py", line 164, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/dist-packages/aiogram/dispatcher/middlewares/error.py", line 27, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/dist-packages/aiogram/dispatcher/middlewares/user_context.py", line 58, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/contextlib.py", line 222, in __aexit__
+    await self.gen.athrow(typ, value, traceback)
+  File "/usr/local/lib/python3.11/dist-packages/aiogram/fsm/storage/memory.py", line 77, in lock
+    yield
+  File "/usr/local/lib/python3.11/dist-packages/aiogram/fsm/middleware.py", line 43, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/dist-packages/aiogram/dispatcher/event/telegram.py", line 126, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/dist-packages/aiogram/dispatcher/event/handler.py", line 71, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/dist-packages/aiogram/dispatcher/dispatcher.py", line 283, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/dist-packages/aiogram/dispatcher/router.py", line 161, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/dist-packages/aiogram/dispatcher/router.py", line 153, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/dist-packages/aiogram/dispatcher/router.py", line 181, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/dist-packages/aiogram/dispatcher/event/telegram.py", line 126, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/dist-packages/aiogram/dispatcher/event/handler.py", line 71, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/home/ubuntu/pubg_bot/main.py", line 93, in process_buy
+    await callback.answer()
+  File "/usr/local/lib/python3.11/dist-packages/aiogram/methods/base.py", line 82, in emit
+    return await bot(self)
+           ^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/dist-packages/aiogram/client/bot.py", line 488, in __call__
+    return await self.session(self, method, timeout=request_timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/dist-packages/aiogram/client/session/base.py", line 259, in __call__
+    return cast(TelegramType, await middleware(bot, method))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/dist-packages/aiogram/client/session/aiohttp.py", line 177, in make_request
+    response = self.check_response(
+               ^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/dist-packages/aiogram/client/session/base.py", line 121, in check_response
+    raise TelegramBadRequest(method=method, message=description)
+aiogram.exceptions.TelegramBadRequest: Telegram server says - Bad Request: query is too old and response timeout expired or query ID is invalid
+INFO:aiogram.event:Update id=25787142 is not handled. Duration 665 ms by bot id=8695673108
+ERROR:aiogram.event:Cause exception while process update id=25787142 by bot id=8695673108
+TelegramBadRequest: Telegram server says - Bad Request: query is too old and response timeout expired or query ID is invalid
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/dist-packages/aiogram/dispatcher/dispatcher.py", line 320, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/dist-packages/aiogram/dispatcher/dispatcher.py", line 164, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/dist-packages/aiogram/dispatcher/middlewares/error.py", line 27, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/dist-packages/aiogram/dispatcher/middlewares/user_context.py", line 58, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/contextlib.py", line 222, in __aexit__
+    await self.gen.athrow(typ, value, traceback)
+  File "/usr/local/lib/python3.11/dist-packages/aiogram/fsm/storage/memory.py", line 77, in lock
+    yield
+  File "/usr/local/lib/python3.11/dist-packages/aiogram/fsm/middleware.py", line 43, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/dist-packages/aiogram/dispatcher/event/telegram.py", line 126, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/dist-packages/aiogram/dispatcher/event/handler.py", line 71, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/dist-packages/aiogram/dispatcher/dispatcher.py", line 283, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/dist-packages/aiogram/dispatcher/router.py", line 161, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/dist-packages/aiogram/dispatcher/router.py", line 153, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/dist-packages/aiogram/dispatcher/router.py", line 181, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/dist-packages/aiogram/dispatcher/event/telegram.py", line 126, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/dist-packages/aiogram/dispatcher/event/handler.py", line 71, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/home/ubuntu/pubg_bot/main.py", line 93, in process_buy
+    await callback.answer()
+  File "/usr/local/lib/python3.11/dist-packages/aiogram/methods/base.py", line 82, in emit
+    return await bot(self)
+           ^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/dist-packages/aiogram/client/bot.py", line 488, in __call__
+    return await self.session(self, method, timeout=request_timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/dist-packages/aiogram/client/session/base.py", line 259, in __call__
+    return cast(TelegramType, await middleware(bot, method))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/dist-packages/aiogram/client/session/aiohttp.py", line 177, in make_request
+    response = self.check_response(
+               ^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/dist-packages/aiogram/client/session/base.py", line 121, in check_response
+    raise TelegramBadRequest(method=method, message=description)
+aiogram.exceptions.TelegramBadRequest: Telegram server says - Bad Request: query is too old and response timeout expired or query ID is invalid
+INFO:aiogram.event:Update id=25787146 is handled. Duration 143 ms by bot id=8695673108
+INFO:aiogram.event:Update id=25787147 is handled. Duration 246 ms by bot id=8695673108
+INFO:aiogram.event:Update id=25787148 is handled. Duration 137 ms by bot id=8695673108
+INFO:aiogram.event:Update id=25787149 is handled. Duration 290 ms by bot id=8695673108
+INFO:aiogram.event:Update id=25787150 is handled. Duration 182 ms by bot id=8695673108
+INFO:aiogram.event:Update id=25787151 is handled. Duration 150 ms by bot id=8695673108
+ERROR:aiogram.dispatcher:Failed to fetch updates - TelegramNetworkError: HTTP Client says - Request timeout error
+WARNING:aiogram.dispatcher:Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8695673108)
+INFO:aiogram.dispatcher:Connection established (tryings = 1, bot id = 8695673108)
+INFO:aiogram.event:Update id=25787154 is handled. Duration 821 ms by bot id=8695673108
+INFO:aiogram.event:Update id=25787153 is handled. Duration 894 ms by bot id=8695673108
+INFO:aiogram.event:Update id=25787152 is not handled. Duration 1019 ms by bot id=8695673108
+ERROR:aiogram.event:Cause exception while process update id=25787152 by bot id=8695673108
+TelegramBadRequest: Telegram server says - Bad Request: query is too old and response timeout expired or query ID is invalid
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.11/dist-packages/aiogram/dispatcher/dispatcher.py", line 320, in _process_update
+    response = await self.feed_update(bot, update, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/dist-packages/aiogram/dispatcher/dispatcher.py", line 164, in feed_update
+    response = await self.update.wrap_outer_middleware(
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/dist-packages/aiogram/dispatcher/middlewares/error.py", line 27, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/dist-packages/aiogram/dispatcher/middlewares/user_context.py", line 58, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.11/contextlib.py", line 222, in __aexit__
+    await self.gen.athrow(typ, value, traceback)
+  File "/usr/local/lib/python3.11/dist-packages/aiogram/fsm/storage/memory.py", line 77, in lock
+    yield
+  File "/usr/local/lib/python3.11/dist-packages/aiogram/fsm/middleware.py", line 43, in __call__
+    return await handler(event, data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/dist-packages/aiogram/dispatcher/event/telegram.py", line 126, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/dist-packages/aiogram/dispatcher/event/handler.py", line 71, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/dist-packages/aiogram/dispatcher/dispatcher.py", line 283, in _listen_update
+    return await self.propagate_event(update_type=update_type, event=event, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/dist-packages/aiogram/dispatcher/router.py", line 161, in propagate_event
+    return await observer.wrap_outer_middleware(_wrapped, event=event, data=kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/dist-packages/aiogram/dispatcher/router.py", line 153, in _wrapped
+    return await self._propagate_event(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/dist-packages/aiogram/dispatcher/router.py", line 181, in _propagate_event
+    response = await observer.trigger(event, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/dist-packages/aiogram/dispatcher/event/telegram.py", line 126, in trigger
+    return await wrapped_inner(event, kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/dist-packages/aiogram/dispatcher/event/handler.py", line 71, in call
+    return await wrapped()
+           ^^^^^^^^^^^^^^^
+  File "/home/ubuntu/pubg_bot/main.py", line 93, in process_buy
+    await callback.answer()
+  File "/usr/local/lib/python3.11/dist-packages/aiogram/methods/base.py", line 82, in emit
+    return await bot(self)
+           ^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/dist-packages/aiogram/client/bot.py", line 488, in __call__
+    return await self.session(self, method, timeout=request_timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/dist-packages/aiogram/client/session/base.py", line 259, in __call__
+    return cast(TelegramType, await middleware(bot, method))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/dist-packages/aiogram/client/session/aiohttp.py", line 177, in make_request
+    response = self.check_response(
+               ^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/dist-packages/aiogram/client/session/base.py", line 121, in check_response
+    raise TelegramBadRequest(method=method, message=description)
+aiogram.exceptions.TelegramBadRequest: Telegram server says - Bad Request: query is too old and response timeout expired or query ID is invalid
+INFO:aiogram.event:Update id=25787155 is handled. Duration 486 ms by bot id=8695673108
+INFO:aiogram.event:Update id=25787156 is handled. Duration 239 ms by bot id=8695673108
+ERROR:aiogram.dispatcher:Failed to fetch updates - TelegramNetworkError: HTTP Client says - Request timeout error
+WARNING:aiogram.dispatcher:Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8695673108)
+INFO:aiogram.dispatcher:Connection established (tryings = 1, bot id = 8695673108)
+INFO:aiogram.event:Update id=25787157 is handled. Duration 850 ms by bot id=8695673108
+INFO:aiogram.event:Update id=25787158 is handled. Duration 866 ms by bot id=8695673108
+ERROR:aiogram.dispatcher:Failed to fetch updates - TelegramNetworkError: HTTP Client says - Request timeout error
+WARNING:aiogram.dispatcher:Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8695673108)
+ERROR:aiogram.dispatcher:Failed to fetch updates - TelegramNetworkError: HTTP Client says - ClientConnectorError: Cannot connect to host api.telegram.org:443 ssl:default [None]
+WARNING:aiogram.dispatcher:Sleep for 1.120121 seconds and try again... (tryings = 1, bot id = 8695673108)
+INFO:aiogram.dispatcher:Connection established (tryings = 2, bot id = 8695673108)
+INFO:aiogram.event:Update id=25787162 is handled. Duration 1828 ms by bot id=8695673108
+INFO:aiogram.event:Update id=25787160 is handled. Duration 1929 ms by bot id=8695673108
+INFO:aiogram.event:Update id=25787161 is handled. Duration 1950 ms by bot id=8695673108
+INFO:aiogram.event:Update id=25787163 is handled. Duration 1997 ms by bot id=8695673108
