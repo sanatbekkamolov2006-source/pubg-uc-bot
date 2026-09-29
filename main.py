@@ -10,7 +10,7 @@ from aiogram.fsm.state import State, StatesGroup
 
 # .env faylidan tokenni yuklash
 load_dotenv()
-TOKEN = os.getenv("BOT_TOKEN")
+TOKEN = os.getenv("8835012864:AAF7h5mnw4wwPhl4EXB1i1lDPboRMP8iv7k")
 
 # Logging sozlamalari
 logging.basicConfig(level=logging.INFO)
